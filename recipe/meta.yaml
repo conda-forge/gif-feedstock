@@ -21,8 +21,8 @@ requirements:
     - setuptools >=62.1.0
   run:
     - python >=3.9
-    - matplotlib-base >=3.5.2
-    - pillow >=9.1.0
+    - matplotlib-base >=3.5,<4.0
+    - pillow >=9.1
 
 test:
   imports:
