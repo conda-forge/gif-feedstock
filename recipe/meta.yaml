@@ -1,5 +1,5 @@
 {% set name = "gif" %}
-{% set version = "22.5.0" %}
+{% set version = "22.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gif-{{ version }}.tar.gz
-  sha256: f4efc868c44d8738f2c6342918266634d5202a9fe19f761f373869109f541bdc
+  sha256: ab37620cbf3b5cb1eb2cca0676577a96e030f0bfb1ff2dba06d85aaf383e2e44
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - setuptools >=62.1.0
   run:
     - python >=3.9
-    - matplotlib-base >=3.5.2
-    - pillow >=9.1.0
+    - matplotlib-base >=3.5,<4.0
+    - pillow >=9.1
 
 test:
   imports:
