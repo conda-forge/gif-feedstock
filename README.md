@@ -1,11 +1,11 @@
-About gif
-=========
+About gif-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gif-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/maxhumber/gif
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gif-feedstock/blob/main/LICENSE.txt)
 
 Summary: The matplotlib Animation Extension
 
