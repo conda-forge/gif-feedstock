@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gif-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gif-{{ version }}.tar.gz
   sha256: 9e4ef83620277dd7e81b016931684b544e5751c17d6db18b820399c7c74e04ee
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools >=62.1.0
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - matplotlib-base >=3.5,<4.0
     - pillow >=9.1
 
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/maxhumber/gif
